@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  dante:
+    image: dante:latest
+    ports:
+      - "1080:1080"
+    volumes:
+      - ./data:/etc/dante
+    env_file:
+      - .env
+    tmpfs:
+      - /run
+    restart: unless-stopped
