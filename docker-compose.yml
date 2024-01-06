@@ -1,7 +1,8 @@
 version: "3.8"
+
 services:
   dante:
-    image: dante:latest
+    image: avt0x/dante:1.4.3
     ports:
       - "1080:1080"
     volumes:
